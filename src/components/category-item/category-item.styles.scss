@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100;300;500;700&display=swap');
+
+
+body {
+  font-family: 'Geologica', sans-serif;
+
+  background-color: black;
+  color: white;
+}
+
+.category-container {
+  // position: relative;
+  display: flex;
+  align-items: center; /* 垂直置中 */
+  justify-content: center; /* 水平置中 */
+  min-width: 30%;
+  border: 1px solid white;
+  flex-grow: 1;
+  margin: 6px 6px;
+  text-align: center;
+  overflow: hidden;
+
+  .background-image {
+    // background-image: url("https://i.ibb.co/cvpntL1/hats.png");
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+  }
+
+  @media screen and (max-width: 414px){
+    height: 350px;
+  }
+}
+
+.category-body-container{
+  background-color: rgba($color: #ffffff, $alpha: 0.7);
+  border: 1px solid white;
+  width: 50%;
+  height: 50%;
+  display: flex; /* 使用弹性布局 */
+  flex-direction: column; /* 上下排列 */
+  justify-content: center; /* 垂直置中 */
+  align-items: center; /* 水平置中 */
+
+  @media screen and (max-width: 414px){
+    height: 40%;
+  }
+}
+
+.category-body-container h2{
+  font-size: 2rem;
+  color: rgba($color: #161616, $alpha: 0.9);
+  margin-top: -10px;
+  font-weight: 500;
+  @media screen and (max-width: 414px){
+    margin-top: 0px;
+    font-size: 1.6rem;
+  }
+}
+
+.category-body-container p{
+  font-weight: 500;
+  font-size: 1.2rem;
+  margin-top: -5px;
+  color: rgba($color: #161616, $alpha: 0.9);
+  @media screen and (max-width: 414px){
+
+  }
+}
+
+// .category-body-container:hover h2,
+.category-body-container:hover p {
+  color: rgba($color: #161616, $alpha: 1.0);
+  // font-weight: 700;
+  text-decoration: underline;
+}
